@@ -60,4 +60,4 @@ use App\Http\Controllers\PageController;
 
 // Route::get('signup',[SignupController::class,'index']);
 // Route::post('signup',[SignupController::class,'displayInfor']);
-Route::get('master',[PageController::class,'getIndex']);
+Route::get('/',[PageController::class,'getIndex']);
