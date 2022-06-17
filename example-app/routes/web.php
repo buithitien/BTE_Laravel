@@ -1,9 +1,11 @@
 <?php
 
+use App\Http\Controllers\DataTableController;
 use App\Http\Controllers\SingupController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PageController;
+use Illuminate\Support\Facades\Schema;
 
 /*
 |--------------------------------------------------------------------------
@@ -60,4 +62,7 @@ use App\Http\Controllers\PageController;
 
 // Route::get('signup',[SignupController::class,'index']);
 // Route::post('signup',[SignupController::class,'displayInfor']);
-Route::get('/',[PageController::class,'getIndex']);
+// Route::get('/',[PageController::class,'getIndex']);
+
+
+Route::get('/',[DataTableController::class, 'createTable']);
