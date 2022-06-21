@@ -13,18 +13,12 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('customers',function(Blueprint $table){
+        Schema::create('client', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
-            $table->integer('gender');
-            $table->string('email');
-            $table->string('address');
-            $table->string('phone_number');
-            $table->string('note');
+            $table->string('email')->unique();
+            $table->string('contact_number');
             $table->timestamps();
-
-
-
         });
     }
 

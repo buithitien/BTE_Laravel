@@ -19,6 +19,7 @@ class DataTableController extends Controller
             $table->increments('id');
             $table->string('name');
             $table->integer('price');
+            $table->image('image');
         });
         echo("tạo bảng thành công");
     }
